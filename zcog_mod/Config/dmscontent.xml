@@ -1,0 +1,3 @@
+<mod>
+	<setattribute xpath = "root/contents/content[source='Sounds/AudioSource_TraderTheme']" name ="path">#Mods/zcog_mod/Resources/Sounds/music.unity3d?Trader</setattribute>
+</mod>
