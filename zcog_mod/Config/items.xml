@@ -1,0 +1,4 @@
+<mod>
+	<setattribute xpath = "items/item[@name = 'meleeWpnSpearT0StoneSpear']/property[@class = 'Action0']/property[@class='HitSounds']/property" name = "param1">Spear_Hit</setattribute>
+	
+</mod>
