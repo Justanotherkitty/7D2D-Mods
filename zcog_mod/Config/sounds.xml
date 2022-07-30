@@ -96,7 +96,7 @@
 	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'levelupplayer']/AudioClip" name = "ClipName">#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?LevelUp</setattribute>
 	
 	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'ItemNeedsRepair']/AudioClip" name = "ClipName">#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?Tool_Broken</setattribute>
-	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'missingitemtorepair']/AudioClip" name = "ClipName">#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?LevelUp</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'missingitemtorepair']/AudioClip" name = "ClipName">#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?Tool_Broken</setattribute>
 	
 	<set xpath = "/Sounds/SoundDataNode[@name = 'player1powerattack']">
 		<AudioSource name="Sounds/AudioSource_Impact"/>
