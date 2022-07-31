@@ -1,0 +1,3 @@
+<mod>
+	<setattribute xpath = "items/item[@name = 'ulmThrownGrenadeMaster']/property[@name = 'Meshfile']" name = "value">#@modfolder(Cog_Mod):Resources/Prefabs/Prefabs.unity3d?Tnt.prefab</setattribute>
+</mod>
