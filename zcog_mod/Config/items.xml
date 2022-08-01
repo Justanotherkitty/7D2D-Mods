@@ -1,4 +1,5 @@
 <mod>
 	<setattribute xpath = "items/item[@name = 'meleeWpnSpearT0StoneSpear']/property[@class = 'Action0']/property[@class='HitSounds']/property" name = "param1">Spear_Hit</setattribute>
-	<setattribute xpath = "items/item[@name = 'thrownAmmoPipeBomb']/property[@name = 'Meshfile']" name = "value">#@modfolder:Resources/Prefabs/Prefabs.unity3d?Tnt.prefab</setattribute>
+	<!-- temporarily removed for release -->
+	<!--<setattribute xpath = "items/item[@name = 'thrownAmmoPipeBomb']/property[@name = 'Meshfile']" name = "value">#@modfolder:Resources/Prefabs/Prefabs.unity3d?Tnt.prefab</setattribute>-->
 </mod>

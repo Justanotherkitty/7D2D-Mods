@@ -1,54 +1,23 @@
 <mod>
 	
-	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'player_death_stinger']/AudioClip" name = "ClipName">#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?Sad</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'player_death_stinger']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Sad</setattribute>
 	
 	<append xpath="/Sounds">
-		<SoundDataNode name = "Cog_Death">
-			<AudioSource name="Sounds/AudioSource_Pain"/>
-			<AudioClip ClipName="#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?Cog_Death"/>
-			<Channel name="Mouth"/>
-			<Priority name="0"/>
-			<maxVoicesPerEntity value="1"/>
-			<LowestPitch name="0.95"/>
-			<HighestPitch name="1.05"/>
-			<LocalCrouchVolumeScale value="1.0"/>
-			<CrouchNoiseScale value="0.5"/>
-			<NoiseScale value="1"/>
-			<MaxVoices value="10"/>
-			<MaxRepeatRate value="0"/>
-		</SoundDataNode>
-		
 		<SoundDataNode name = "Spear_Hit">
 			<AudioSource name="Sounds/AudioSource_Impact"/>
 			<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
-			<AudioClip ClipName="#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?Spear_Hit"/>
+			<AudioClip ClipName="#@modfolder:Resources/Sounds/sounds.unity3d?Spear_Hit"/>
 			<LowestPitch name="0.9"/>
 			<HighestPitch name="1.0"/>
 			<LocalCrouchVolumeScale value="0.3"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="5"/> <MaxRepeatRate value="0.01"/>
 		</SoundDataNode>
 	</append>
 	
-	<append xpath="/Sounds">
-		<SoundDataNode name = "Cog_Death_f">
-			<AudioSource name="Sounds/AudioSource_Pain"/>
-			<AudioClip ClipName="#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?Cog_Death_f"/>
-			<Channel name="Mouth"/>
-			<Priority name="0"/>
-			<maxVoicesPerEntity value="1"/>
-			<LowestPitch name="0.95"/>
-			<HighestPitch name="1.05"/>
-			<LocalCrouchVolumeScale value="1.0"/>
-			<CrouchNoiseScale value="0.5"/>
-			<NoiseScale value="1"/>
-			<MaxVoices value="10"/>
-			<MaxRepeatRate value="0"/>
-		</SoundDataNode>
-	</append>
 	
 	<set xpath = "/Sounds/SoundDataNode[@name = 'vultureattack']">
 		<AudioSource name="Sounds/AudioSource_Creatures100Meter"/>
 		<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
-		<AudioClip ClipName="#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?Bird_Dive"/>
+		<AudioClip ClipName="#@modfolder:Resources/Sounds/sounds.unity3d?Bird_Dive"/>
 		<Channel name="Mouth"/>
 		<Priority name="2"/>
 		<maxVoicesPerEntity value="1"/>
@@ -60,20 +29,24 @@
 		<MaxRepeatRate value="0.9"/>
 	</set>
 	
-	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'player_bandage']/AudioClip" name = "ClipName">#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?Heal</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'player_bandage']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Heal</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'player_firstaidkit']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Heal2</setattribute>
 	
-	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'minibike_horn']/AudioClip" name = "ClipName">#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?Bike_horn</setattribute>
 	
-	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'tooltip_popup']/AudioClip" name = "ClipName">#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?UI_notif</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'minibike_horn']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Bike_horn</setattribute>
+	
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'alarm1']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Alarm</setattribute>
+	
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'tooltip_popup']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?UI_notif</setattribute>
 	
 	<set xpath = "/Sounds/SoundDataNode[@name = 'avalanche']">
 		<AudioSource name="Sounds/AudioSource_Impact"/>
 		<Noise ID="4" noise="60" time="2" heat_map_strength="0.5" heat_map_time="90"/>
-		<AudioClip ClipName="#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?Block_Fall_1"/>
-		<AudioClip ClipName="#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?Block_Fall_2"/>
-		<AudioClip ClipName="#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?Block_Fall_3"/>
-		<AudioClip ClipName="#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?Block_Fall_4"/>
-		<AudioClip ClipName="#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?Block_Fall_5"/>
+		<AudioClip ClipName="#@modfolder:Resources/Sounds/sounds.unity3d?Block_Fall_1"/>
+		<AudioClip ClipName="#@modfolder:Resources/Sounds/sounds.unity3d?Block_Fall_2"/>
+		<AudioClip ClipName="#@modfolder:Resources/Sounds/sounds.unity3d?Block_Fall_3"/>
+		<AudioClip ClipName="#@modfolder:Resources/Sounds/sounds.unity3d?Block_Fall_4"/>
+		<AudioClip ClipName="#@modfolder:Resources/Sounds/sounds.unity3d?Block_Fall_5"/>
 		<LocalCrouchVolumeScale value="0.5"/>
 		<CrouchNoiseScale value="0.5"/>
 		<NoiseScale value="1"/>
@@ -81,28 +54,41 @@
 		<MaxRepeatRate value="0.01"/> 
 	</set>
 	
-	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'light_pipebomb']/AudioClip" name = "ClipName">#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?Throw_Dynamite</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'light_pipebomb']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Throw_Dynamite</setattribute>
 	
-	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'fuse_lp']/AudioClip" name = "ClipName">#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?Fuse_Loop</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'fuse_lp']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Fuse_Loop</setattribute>
 	
-	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'explosion1']/AudioClip" name = "ClipName">#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?Explosion</setattribute>
-	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'explosion2']/AudioClip" name = "ClipName">#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?Explosion</setattribute>
-	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'explosion3']/AudioClip" name = "ClipName">#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?Explosion</setattribute>
-	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'explosion_grenade']/AudioClip" name = "ClipName">#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?Explosion</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'explosion1']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Explosion</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'explosion2']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Explosion</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'explosion3']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Explosion</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'explosion_grenade']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Explosion</setattribute>
 	
-	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'landmine_trigger']/AudioClip" name = "ClipName">#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?Mine_Trigger</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'landmine_trigger']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Mine_Trigger</setattribute>
 	
-	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'levelup']/AudioClip" name = "ClipName">#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?LevelUp</setattribute>
-	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'levelupplayer']/AudioClip" name = "ClipName">#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?LevelUp</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'levelup']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?LevelUp</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'levelupplayer']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?LevelUp</setattribute>
 	
-	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'ItemNeedsRepair']/AudioClip" name = "ClipName">#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?Tool_Broken</setattribute>
-	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'missingitemtorepair']/AudioClip" name = "ClipName">#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?Tool_Broken</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'ItemNeedsRepair']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Tool_Broken</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'missingitemtorepair']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Tool_Broken</setattribute>
 	
 	<set xpath = "/Sounds/SoundDataNode[@name = 'player1powerattack']">
 		<AudioSource name="Sounds/AudioSource_Impact"/>
 		<Noise ID="4" noise="60" time="2" heat_map_strength="0.5" heat_map_time="90"/>
-		<AudioClip ClipName="#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?M2_1"/>
-		<AudioClip ClipName="#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?M2_2"/>
+		<AudioClip ClipName="#@modfolder:Resources/Sounds/sounds.unity3d?M2_1"/>
+		<AudioClip ClipName="#@modfolder:Resources/Sounds/sounds.unity3d?M2_2"/>
+		<LowestPitch name="0.9"/>
+		<HighestPitch name="1.1"/>
+		<LocalCrouchVolumeScale value="0.5"/>
+		<CrouchNoiseScale value="0.5"/>
+		<NoiseScale value="1"/>
+		<MaxVoices value="10"/>
+		<MaxRepeatRate value="0.01"/> 
+	</set>
+	<set xpath = "/Sounds/SoundDataNode[@name = 'player2powerattack']">
+		<AudioSource name="Sounds/AudioSource_Impact"/>
+		<Noise ID="4" noise="60" time="2" heat_map_strength="0.5" heat_map_time="90"/>
+		<AudioClip ClipName="#@modfolder:Resources/Sounds/sounds.unity3d?M2_1"/>
+		<AudioClip ClipName="#@modfolder:Resources/Sounds/sounds.unity3d?M2_2"/>
 		<LowestPitch name="0.8"/>
 		<HighestPitch name="1.5"/>
 		<LocalCrouchVolumeScale value="0.5"/>
@@ -112,16 +98,112 @@
 		<MaxRepeatRate value="0.01"/> 
 	</set>
 	
-	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'quest_failed']/AudioClip" name = "ClipName">#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?Quest_Fail</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'quest_failed']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Quest_Fail</setattribute>
 	
-	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'rabbitdeath']/AudioClip" name = "ClipName">#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?Rabbit_Death</setattribute>
-	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'rabbitpain']/AudioClip" name = "ClipName">#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?Rabbit_Death</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'rabbitdeath']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Rabbit_Death</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'rabbitpain']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Rabbit_Death</setattribute>
 	
-	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'stagdeath']/AudioClip" name = "ClipName">#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?Deer_Death</setattribute>
-	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'stagpain']/AudioClip" name = "ClipName">#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?Deer_Death</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'stagdeath']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Deer_Death</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'stagpain']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Deer_Death</setattribute>
 	
-	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'spear_throw']/AudioClip" name = "ClipName">#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?Spear_Throw</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'spear_throw']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Spear_Throw</setattribute>
 	
-	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'zombiefemalescoutalert']/AudioClip" name = "ClipName">#Mods/zcog_mod/Resources/Sounds/sounds.unity3d?Screamer_Scream</setattribute>
+	<!-- cog sounds -->
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'zombiefemalescoutalert']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Screamer_Scream</setattribute>
+	
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'explosion_body']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Dismember</setattribute>
+	
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'quest_master_complete']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?MG_win</setattribute>
+	
+	
+	<!-- Base Cog F -->
+	
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'zombiefemalealert']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Alert_F</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'zombiefemaleattack']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Attack_F</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'zombiefemaledeath']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Death_F</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'zombiefemalepain']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Pain_F</setattribute>
+	
+	<remove xpath = "/Sounds/SoundDataNode[@name = 'zombiefemalesense']/AudioClip"/>
+	<append xpath = "/Sounds/SoundDataNode[@name = 'zombiefemalesense']">
+		<AudioClip ClipName = "#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Sense_F"/>
+		<AudioClip ClipName = "#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Sense_F_2"/>
+
+	</append>
+	
+	<remove xpath = "/Sounds/SoundDataNode[@name = 'zombiefemaleroam']/AudioClip"/>
+	<append xpath = "/Sounds/SoundDataNode[@name = 'zombiefemaleroam']">
+		<AudioClip ClipName = "#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Sense_F"/>
+		<AudioClip ClipName = "#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Sense_F_2"/>
+		<AudioClip ClipName = "#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Alert_F"/>
+		<AudioClip ClipName = "#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Attack_F"/>
+		<AudioClip ClipName = "#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Pain_F"/>
+	</append>
+	
+	<!-- Base Cog F2 -->
+	
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'zombiefemale2alert']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Alert_F</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'zombiefemale2attack']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Attack_F</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'zombiefemale2death']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Death_F</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'zombiefemale2pain']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Pain_F</setattribute>
+	
+	<remove xpath = "/Sounds/SoundDataNode[@name = 'zombiefemale2sense']/AudioClip"/>
+	<append xpath = "/Sounds/SoundDataNode[@name = 'zombiefemale2sense']">
+		<AudioClip ClipName = "#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Sense_F"/>
+		<AudioClip ClipName = "#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Sense_F_2"/>
+
+	</append>
+	
+	<remove xpath = "/Sounds/SoundDataNode[@name = 'zombiefemale2roam']/AudioClip"/>
+	<append xpath = "/Sounds/SoundDataNode[@name = 'zombiefemale2roam']">
+		<AudioClip ClipName = "#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Sense_F"/>
+		<AudioClip ClipName = "#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Sense_F_2"/>
+		<AudioClip ClipName = "#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Alert_F"/>
+		<AudioClip ClipName = "#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Attack_F"/>
+		<AudioClip ClipName = "#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Pain_F"/>
+	</append>
+	
+	<!-- Base Cog M -->
+	
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'zombiemalealert']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Alert</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'zombiemaleattack']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Attack</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'zombiemaledeath']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Death</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'zombiemalepain']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Pain</setattribute>
+	
+	<remove xpath = "/Sounds/SoundDataNode[@name = 'zombiemalesense']/AudioClip"/>
+	<append xpath = "/Sounds/SoundDataNode[@name = 'zombiemalesense']">
+		<AudioClip ClipName = "#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Sense"/>
+		<AudioClip ClipName = "#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Sense_2"/>
+	</append>
+	
+	<remove xpath = "/Sounds/SoundDataNode[@name = 'zombiemaleroam']/AudioClip"/>
+	<append xpath = "/Sounds/SoundDataNode[@name = 'zombiemaleroam']">
+		<AudioClip ClipName = "#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Sense"/>
+		<AudioClip ClipName = "#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Sense_2"/>
+		<AudioClip ClipName = "#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Alert"/>
+		<AudioClip ClipName = "#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Attack"/>
+		<AudioClip ClipName = "#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Pain"/>
+	</append>
+	
+	<!-- Base Cog M2 -->
+	
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'zombiemale2alert']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Alert</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'zombiemale2attack']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Attack</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'zombiemale2death']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Death</setattribute>
+	<setattribute xpath = "/Sounds/SoundDataNode[@name = 'zombiemale2pain']/AudioClip" name = "ClipName">#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Pain</setattribute>
+	
+	<remove xpath = "/Sounds/SoundDataNode[@name = 'zombiemale2sense']/AudioClip"/>
+	<append xpath = "/Sounds/SoundDataNode[@name = 'zombiemale2sense']">
+		<AudioClip ClipName = "#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Sense"/>
+		<AudioClip ClipName = "#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Sense_2"/>
+	</append>
+	
+	<remove xpath = "/Sounds/SoundDataNode[@name = 'zombiemale2roam']/AudioClip"/>
+	<append xpath = "/Sounds/SoundDataNode[@name = 'zombiemale2roam']">
+		<AudioClip ClipName = "#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Sense"/>
+		<AudioClip ClipName = "#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Sense_2"/>
+		<AudioClip ClipName = "#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Alert"/>
+		<AudioClip ClipName = "#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Attack"/>
+		<AudioClip ClipName = "#@modfolder:Resources/Sounds/sounds.unity3d?Cog_Pain"/>
+	</append>
 	
 </mod>
