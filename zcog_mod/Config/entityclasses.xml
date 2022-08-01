@@ -1,4 +1,0 @@
-<mod>
-	<setattribute xpath="/entity_classes/entity_class[@name = 'zombieTemplateMale']/property[@name = 'SoundDeath']" name="value">Cog_Death</setattribute>
-	<setattribute xpath="/entity_classes/entity_class[@extends = 'zombieTemplateMale']/property[@name = 'SoundDeath']" name="value">Cog_Death</setattribute>
-</mod>
